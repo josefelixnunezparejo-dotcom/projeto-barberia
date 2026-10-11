@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121212">
+  <title>Barbería Dairon | Barbearia em Caxias do Sul - RS</title>
+  <meta name="description" content="Barbería Dairon em Caxias do Sul - RS. Cortes, barbas e combos com acabamento profissional. Agende seu horário pelo WhatsApp: (54) 9996-7506. Segunda a sábado das 09h às 21h.">
+  <meta name="author" content="Barbería Dairon">
+  <meta property="og:title" content="Barbería Dairon | Barbearia em Caxias do Sul - RS">
+  <meta property="og:description" content="O estilo que você merece, ao alcance das suas mãos. Corte, barba e combos VIP. Agende pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Ir para o conteúdo</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#inicio" class="brand" aria-label="Barbería Dairon - página inicial">
+        <span class="brand__mark"><i class="fa-solid fa-scissors"></i></span>
+        <span class="brand__text">Barber&iacute;a <strong>Dairon</strong></span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </button>
+
+      <div class="nav__overlay" id="navOverlay" hidden></div>
+
+      <ul class="nav__menu" id="navMenu">
+        <li class="nav__item"><a href="#inicio" class="nav__link is-active">In&iacute;cio</a></li>
+        <li class="nav__item"><a href="#catalogo" class="nav__link"><i class="fa-solid fa-scissors"></i> Cat&aacute;logo</a></li>
+        <li class="nav__item"><a href="#horarios" class="nav__link"><i class="fa-regular fa-clock"></i> Hor&aacute;rios</a></li>
+        <li class="nav__item"><a href="#agendamento" class="nav__link"><i class="fa-brands fa-whatsapp"></i> Agendar</a></li>
+        <li class="nav__item nav__item--cta">
+          <a href="#agendamento" class="btn btn--gold btn--sm nav__cta">Agendar agora</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="hero__image"></div>
+
+      <div class="container hero__content">
+        <p class="hero__badge reveal">
+          <i class="fa-solid fa-location-dot"></i>
+          Caxias do Sul &middot; Rio Grande do Sul
+        </p>
+
+        <h1 class="hero__title reveal">
+          O estilo que voc&ecirc; merece,
+          <span class="hero__title-accent">ao alcance das suas m&atilde;os</span>
+        </h1>
+
+        <p class="hero__text reveal">
+          Cortes desenhados na tesoura, barbas finalizadas na navalha quente e um atendimento
+          que respeita o seu tempo. Escolha seu servi&ccedil;o, garanta seu hor&aacute;rio e apare&ccedil;a
+          pronto para virar cabe&ccedil;a.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#agendamento" class="btn btn--gold btn--lg">
+            <i class="fa-brands fa-whatsapp"></i>
+            Agendar meu hor&aacute;rio
+          </a>
+          <a href="#catalogo" class="btn btn--ghost btn--lg">
+            <i class="fa-solid fa-tags"></i>
+            Ver cortes e pre&ccedil;os
+          </a>
+        </div>
+
+        <ul class="hero__stats reveal" role="list">
+          <li class="hero__stat">
+            <i class="fa-regular fa-clock"></i>
+            <span><strong>Seg a S&aacute;b</strong> 09h &agrave; 21h</span>
+          </li>
+          <li class="hero__stat">
+            <i class="fa-solid fa-scissors"></i>
+            <span><strong>+6</strong> servi&ccedil;os no cat&aacute;logo</span>
+          </li>
+          <li class="hero__stat">
+            <i class="fa-solid fa-star"></i>
+            <span><strong>100%</strong> aten&ccedil;&atilde;o dedicada</span>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#catalogo" class="hero__scroll" aria-label="Rolar para o cat&aacute;logo">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section class="section section--catalog" id="catalogo">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow"><i class="fa-solid fa-scissors"></i> Cat&aacute;logo</span>
+          <h2 class="section__title">Cortes &amp; pre&ccedil;os</h2>
+          <p class="section__text">
+            Escolha o servi&ccedil;o que combina com o seu momento. Todos os valores j&aacute; incluem consulta, lavagem, finaliza&ccedil;&atilde;o e produtos de cuidado profissional.
+          </p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar servi&ccedil;os por categoria">
+          <button class="filter is-active" type="button" data-filter="todos">Todos</button>
+          <button class="filter" type="button" data-filter="corte">Cortes</button>
+          <button class="filter" type="button" data-filter="barba">Barbas</button>
+          <button class="filter" type="button" data-filter="combo">Combos</button>
+          <button class="filter" type="button" data-filter="extras">Extras</button>
+        </div>
+
+        <div class="cards" id="serviceGrid">
+          <article class="card reveal" data-category="corte" data-service="Corte Degrad&ecirc; / Fade" data-price="R$ 45,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Barbeiro realizando um corte degradê" loading="lazy">
+              <span class="card__tag">Mais pedido</span>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Corte Degrad&ecirc; / Fade</h3>
+              <p class="card__text">
+                Degrad&ecirc; impec&aacute;vel do topo &agrave; base, alinhamento milim&eacute;trico e
+                acabamento na navalha quente.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 45,00</span>
+                <button class="btn btn--outline btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="corte" data-service="Corte Cl&aacute;ssico" data-price="R$ 40,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Corte cl&aacute;ssico feito com tesoura e m&aacute;quina" loading="lazy">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Corte Cl&aacute;ssico</h3>
+              <p class="card__text">
+                O atemporal: tesoura e m&aacute;quina combinadas para um visual limpo, elegante e
+                f&aacute;cil de manter.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 40,00</span>
+                <button class="btn btn--outline btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="barba" data-service="Barba Completa" data-price="R$ 35,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Barba desenhada e finalizada" loading="lazy">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Barba Completa</h3>
+              <p class="card__text">
+                Barba desenhada, h&aacute;dratada e finalizada com &oacute;leo e b&aacute;lsamo
+                premium. An&aacute;lise de contorno inclusa.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 35,00</span>
+                <button class="btn btn--outline btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--vip reveal" data-category="combo" data-service="Combo Corte + Barba VIP" data-price="R$ 70,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Combo de corte e barba VIP" loading="lazy">
+              <span class="card__tag card__tag--vip">VIP</span>
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Combo Corte + Barba VIP</h3>
+              <p class="card__text">
+                A experi&ecirc;ncia completa: corte modelo, barba VIP e massagem relaxante com
+                toalha quente.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 70,00</span>
+                <button class="btn btn--gold btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="extras" data-service="Platinado / Colora&ccedil;&atilde;o" data-price="R$ 80,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Colora&ccedil;&atilde;o e platinado masculine" loading="lazy">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Platinado / Colora&ccedil;&atilde;o</h3>
+              <p class="card__text">
+                Transforma&ccedil;&atilde;o de cor com matiza&ccedil;&atilde;o, tratamento capilar e
+                finaliza&ccedil;&atilde;o sob medida.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 80,00</span>
+                <button class="btn btn--outline btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="extras" data-service="Sobrancelha &amp; Bigode" data-price="R$ 20,00">
+            <figure class="card__media">
+              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                   alt="Alinhamento de sobrancelha e bigode" loading="lazy">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">Sobrancelha &amp; Bigode</h3>
+              <p class="card__text">
+                Design e alinhamento expressivo para deixar o rosto mais marcante e a barba
+                mais definida.
+              </p>
+              <div class="card__footer">
+                <span class="card__price"><small>a partir de</small> R$ 20,00</span>
+                <button class="btn btn--outline btn--sm card__cta" type="button" data-service-btn>
+                  Escolher este servi&ccedil;o
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="cards__empty reveal" id="cardsEmpty" hidden>
+          <i class="fa-regular fa-face-frown"></i>
+          Nenhum servi&ccedil;o encontrado nesta categoria.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--schedule" id="horarios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow"><i class="fa-regular fa-clock"></i> Hor&aacute;rios &amp; Disponibilidade</span>
+          <h2 class="section__title">Estamos abertos?</h2>
+          <p class="section__text">
+            Hor&aacute;rio de atendimento de <strong>segunda a s&aacute;bado, das 09:00 &agrave; s 21:00 hrs</strong>.
+            Consulte o status em tempo real e garanta seu hor&aacute;rio antes de vir.
+          </p>
+        </header>
+
+        <div class="schedule">
+          <div class="panel panel--status reveal">
+            <div class="status-badge" id="statusBadge" data-state="loading">
+              <span class="status-badge__dot"></span>
+              <span class="status-badge__text">Verificando hor&aacute;rio atual...</span>
+            </div>
+
+            <div class="clock">
+              <span class="clock__label"><i class="fa-regular fa-clock"></i> Hor&aacute;rio de Caxias do Sul agora</span>
+              <strong class="clock__time" id="clockTime">--:--:--</strong>
+              <span class="clock__date" id="clockDate">carregando data</span>
+            </div>
+
+            <div class="status-message" id="statusMessage">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Aguardando dados da agenda...</p>
+            </div>
+
+            <div class="slot-legend">
+              <h4 class="slot-legend__title"><i class="fa-solid fa-user-tie"></i> Status do barbeiro</h4>
+              <p class="slot-legend__text" id="barberStatusText">
+                Status atual: <strong>atualizando...</strong>
+              </p>
+              <button class="toggle" id="barberToggle" type="button" role="switch" aria-checked="true">
+                <span class="toggle__track"><span class="toggle__thumb"></span></span>
+                <span class="toggle__label">Simular agenda do dia</span>
+              </button>
+              <small class="slot-legend__hint">
+                Alterne para ver como a disponibilidade aparece para o cliente.
+              </small>
+            </div>
+          </div>
+
+          <div class="panel panel--hours reveal">
+            <h3 class="panel__title"><i class="fa-regular fa-calendar-days"></i> Semana de atendimento</h3>
+
+            <ul class="hours-list" id="hoursList" role="list">
+              <li class="hours-list__item" data-day="1">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> Segunda-feira</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item" data-day="2">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> Ter&ccedil;a-feira</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item" data-day="3">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> Quarta-feira</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item" data-day="4">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> Quinta-feira</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item" data-day="5">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> Sexta-feira</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item" data-day="6">
+                <span class="hours-list__day"><i class="fa-regular fa-circle"></i> S&aacute;bado</span>
+                <span class="hours-list__time">09:00 &ndash; 21:00</span>
+              </li>
+              <li class="hours-list__item hours-list__item--closed" data-day="0">
+                <span class="hours-list__day"><i class="fa-solid fa-circle-xmark"></i> Domingo</span>
+                <span class="hours-list__time">Fechado</span>
+              </li>
+            </ul>
+
+            <a href="#agendamento" class="btn btn--gold btn--block">
+              <i class="fa-brands fa-whatsapp"></i>
+              Reservar hor&aacute;rio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--booking" id="agendamento">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow"><i class="fa-brands fa-whatsapp"></i> Agendamento</span>
+          <h2 class="section__title">Reserve seu hor&aacute;rio</h2>
+          <p class="section__text">
+            Preencha os dados abaixo e enviei a solicita&ccedil;&atilde;o direto para o WhatsApp do
+            Dairon. A confirma&ccedil;&atilde;o &eacute; feita por ele em poucos minutos.
+          </p>
+        </header>
+
+        <div class="booking">
+          <form class="booking__form panel reveal" id="bookingForm" novalidate>
+            <div class="field">
+              <label class="field__label" for="clientName">
+                <i class="fa-regular fa-user"></i> Seu nome
+              </label>
+              <input class="field__input" type="text" id="clientName" name="clientName"
+                     placeholder="Ex: João da Silva" autocomplete="name" required>
+              <span class="field__error" data-error-for="clientName"></span>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="clientService">
+                <i class="fa-solid fa-scissors"></i> Servi&ccedil;o desejado
+              </label>
+              <div class="field__select-wrap">
+                <select class="field__input field__select" id="clientService" name="clientService" required>
+                  <option value="">Selecione um servi&ccedil;o...</option>
+                </select>
+                <i class="fa-solid fa-chevron-down field__select-icon"></i>
+              </div>
+              <span class="field__error" data-error-for="clientService"></span>
+            </div>
+
+            <div class="booking__row">
+              <div class="field">
+                <label class="field__label" for="clientDate">
+                  <i class="fa-regular fa-calendar"></i> Dia
+                </label>
+                <input class="field__input" type="date" id="clientDate" name="clientDate" required>
+                <span class="field__hint">Atendimento de segunda a s&aacute;bado.</span>
+                <span class="field__error" data-error-for="clientDate"></span>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="clientTime">
+                  <i class="fa-regular fa-clock"></i> Hor&aacute;rio
+                </label>
+                <div class="field__select-wrap">
+                  <select class="field__input field__select" id="clientTime" name="clientTime" required>
+                    <option value="">Selecione...</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down field__select-icon"></i>
+                </div>
+                <span class="field__hint">Das 09:00 &agrave; s 21:00.</span>
+                <span class="field__error" data-error-for="clientTime"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="clientNotes">
+                <i class="fa-regular fa-comment-dots"></i> Observa&ccedil;&atilde;o <span class="field__optional">(opcional)</span>
+              </label>
+              <textarea class="field__input field__textarea" id="clientNotes" name="clientNotes" rows="3"
+                        placeholder="Ex: fazer as laterais bem curtas, manter o topo comprido..."></textarea>
+            </div>
+
+            <button class="btn btn--gold btn--block btn--lg" type="submit">
+              <i class="fa-brands fa-whatsapp"></i>
+              Reservar hor&aacute;rio via WhatsApp
+            </button>
+
+            <p class="booking__note">
+              <i class="fa-solid fa-lock"></i>
+              Seus dados s&atilde;o usados apenas para montar a mensagem de agendamento.
+            </p>
+          </form>
+
+          <aside class="booking__side reveal">
+            <div class="panel panel--info">
+              <h3 class="panel__title"><i class="fa-solid fa-location-dot"></i> Onde estamos</h3>
+              <ul class="info-list" role="list">
+                <li class="info-list__item">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <div>
+                    <strong>Caxias do Sul &ndash; RS</strong>
+                    <span>Barbear&iacute;a Dairon</span>
+                  </div>
+                </li>
+                <li class="info-list__item">
+                  <i class="fa-regular fa-clock"></i>
+                  <div>
+                    <strong>Seg a S&aacute;b, 09:00 &agrave; s 21:00</strong>
+                    <span>Domingo n&atilde;o abrimos</span>
+                  </div>
+                </li>
+                <li class="info-list__item">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <div>
+                    <strong>+55 54 9996-7506</strong>
+                    <span>Chamadas e mensagens no WhatsApp</span>
+                  </div>
+                </li>
+              </ul>
+
+              <a class="btn btn--outline btn--block"
+                 href="https://wa.me/555499967506?text=Ol%C3%A1%2C%20Dairon!%20Quero%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os%20e%20os%20pre%C3%A7os%20da%20barbearia."
+                 target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i>
+                Tirar uma d&uacute;vida
+              </a>
+            </div>
+
+            <div class="panel panel--tip">
+              <h3 class="panel__title"><i class="fa-solid fa-circle-check"></i> Como funciona</h3>
+              <ol class="steps" role="list">
+                <li class="steps__item">Monte seu pedido no cat&aacute;logo.</li>
+                <li class="steps__item">Preencha nome, servi&ccedil;o, dia e hor&aacute;rio.</li>
+                <li class="steps__item">Clique em reservar: o WhatsApp abre com a mensagem pronta.</li>
+                <li class="steps__item">O Dairon confirma e garante sua vaga.</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark"><i class="fa-solid fa-scissors"></i></span>
+        <h3>Barber&iacute;a <strong>Dairon</strong></h3>
+        <p>
+          Barbearia tradicional com metodologia moderna em Caxias do Sul, Rio Grande do Sul.
+          Corte, barba e atendimento de primeira.
+        </p>
+        <ul class="social" role="list">
+          <li><a href="https://wa.me/555499967506" target="_blank" rel="noopener" aria-label="WhatsApp da Barbear&iacute;a Dairon"><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram da Barbear&iacute;a Dairon"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook da Barbear&iacute;a Dairon"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Navega&ccedil;&atilde;o</h4>
+        <ul class="footer__list" role="list">
+          <li><a href="#inicio">In&iacute;cio</a></li>
+          <li><a href="#catalogo">Cat&aacute;logo</a></li>
+          <li><a href="#horarios">Hor&aacute;rios</a></li>
+          <li><a href="#agendamento">Agendar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Servi&ccedil;os</h4>
+        <ul class="footer__list" role="list">
+          <li><a href="#catalogo">Corte Degrad&ecirc; / Fade</a></li>
+          <li><a href="#catalogo">Corte Cl&aacute;ssico</a></li>
+          <li><a href="#catalogo">Barba Completa</a></li>
+          <li><a href="#catalogo">Combo Corte + Barba VIP</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Contato</h4>
+        <ul class="footer__list" role="list">
+          <li><i class="fa-solid fa-location-dot"></i> Caxias do Sul &ndash; RS</li>
+          <li><i class="fa-regular fa-clock"></i> Seg a S&aacute;b, 09:00 &agrave; s 21:00</li>
+          <li><a href="https://wa.me/555499967506" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> (54) 9996-7506</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Barber&iacute;a Dairon. Todos os direitos reservados.</p>
+      <p>Caxias do Sul &ndash; Rio Grande do Sul &middot; Feito com <i class="fa-solid fa-heart" style="color:#D4AF37"></i> por Dairon</p>
+    </div>
+  </footer>
+
+  <a class="float-wa" id="floatWa"
+     href="https://wa.me/555499967506?text=Ol%C3%A1%2C%20Dairon!%20Preciso%20de%20uma%20m%C3%A3o%20com%20o%20hor%C3%A1rio%20da%20barbearia."
+     target="_blank" rel="noopener" aria-label="Falar direto com a Barbear&iacute;a Dairon no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-wa__tooltip">Agendar agora</span>
+  </a>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo" hidden>
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastText">Mensagem</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
