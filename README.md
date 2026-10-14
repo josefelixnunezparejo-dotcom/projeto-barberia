@@ -12,3 +12,4 @@ O objetivo principal é oferecer uma experiência intuitiva e rápida para o usu
 
 ## 🌐 Ver em funcionamento
 👉 Repositório oficial do projeto para avaliação de código HTML, CSS e JavaScript.
+https://josefelixnunezparejo-dotcom.github.io/projeto-barberia/
