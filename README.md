@@ -11,4 +11,4 @@ Landing page moderna e responsiva desenvolvida para agendamentos e apresentaçã
 O objetivo principal é oferecer uma experiência intuitiva e rápida para o usuário agendar serviços pelo smartphone ou computador, focando na conversão de clientes para negócios locais.
 
 ## 🌐 Ver em funcionamento
-👉 [Clique aqui para acessar o projeto no Netlify](COLOQUE_AQUI_O_LINK_DO_NETLIFY)
+👉 Repositório oficial do projeto para avaliação de código HTML, CSS e JavaScript.
